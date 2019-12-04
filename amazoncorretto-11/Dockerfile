@@ -7,9 +7,6 @@ ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries
 
 RUN yum install -y tar which gzip \
   && yum install -y git
-  
-RUN git config --global user.email "wonderstorm.teamcity@gmail.com" \
-  && git config --global user.name "wonderstorm-teamcity"
 
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz \
