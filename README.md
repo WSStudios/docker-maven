@@ -1,3 +1,30 @@
+
+Wonderstorm Edits
+=================
+
+In order to update the Wonderstorm build machine image, do the following from root of the repo
+
+# NOTE: this is a public repo.
+
+cd ws-amazoncorretto-11/
+# edit the dockerfile if needed
+vim Dockerfile
+# this builds image locally and puts it in your local cache
+docker build --tag danlws/ws-maven:3.6-amazoncorretto-11 .
+# this pushes the image to dan's public docker hub registry where we store it.
+docker push danlws/ws-maven:3.6-amazoncorretto-11
+
+# NOTE: this is a public repo.
+
+
+
+
+
+
+
+
+
+
 docker-maven
 ============
 
