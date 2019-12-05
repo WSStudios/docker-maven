@@ -7,6 +7,8 @@ In order to update the Wonderstorm build machine image, do the following from ro
 ```
 # NOTE: this is a public repo.
 
+# NOTE: you'll need to run "docker login" and login to an account with push permissions to "danlws/ws-maven"
+
 cd ws-amazoncorretto-11/
 # edit the dockerfile if needed
 vim Dockerfile
