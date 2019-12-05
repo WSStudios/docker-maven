@@ -4,6 +4,7 @@ Wonderstorm Edits
 
 In order to update the Wonderstorm build machine image, do the following from root of the repo
 
+```
 # NOTE: this is a public repo.
 
 cd ws-amazoncorretto-11/
@@ -15,7 +16,7 @@ docker build --tag danlws/ws-maven:3.6-amazoncorretto-11 .
 docker push danlws/ws-maven:3.6-amazoncorretto-11
 
 # NOTE: this is a public repo.
-
+```
 
 
 
